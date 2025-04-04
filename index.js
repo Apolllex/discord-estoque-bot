@@ -90,7 +90,7 @@ client.on('interactionCreate', async interaction => {
 
             const embed = new EmbedBuilder()
                 .setTitle("📦 Estoque Atual")
-                .setColor("Blue")
+                .setColor("Black")
                 .setDescription(rows.map(row => `**${row.item}**: ${row.quantidade}`).join('\n'));
 
             interaction.reply({ embeds: [embed] });
